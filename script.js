@@ -8,8 +8,8 @@ function check () {
   const day = dayinput.value
   ageinput.value = null
   dayinput.value = null
-  if ((day == 'Monday' || day == 'Tuesday' || day == 'Wednesday' || day == 'Thursday' || day == 'Friday' || day == 'Saturday' || day == 'Sunday') && (age * 0 === 0)) {
-    if ((day == 'Tuesday' || day == 'Thursday') || (age > 12 && age < 21)) {
+  if ((day === 'Monday' || day === 'Tuesday' || day === 'Wednesday' || day === 'Thursday' || day === 'Friday' || day === 'Saturday' || day === 'Sunday') && (age * 0 === 0)) {
+    if ((day === 'Tuesday' || day === 'Thursday') || (age > 12 && age < 21)) {
       text.innerHTML = 'You are eligible for student pricing!'
     } else {
       text.innerHTML = 'You must pay the regular price.'
